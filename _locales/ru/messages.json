@@ -1,0 +1,23 @@
+{
+    "extName": {
+         "message": "YaGet",
+         "description":"Имя расширения."
+    },
+    "extDescription": {
+         "message": "Загрузка файлов на Yandex диск",
+         "description":"Описание расширения."
+    },
+    
+    "downloadSuccessful": {
+         "message": "Успешная загрузка", 
+         "description": "Успешная загрузка." 
+    },    
+    "downloadFailure": {
+         "message": "Ошибочная загрузка",
+         "description": "Ошибочная загрузка." 
+    },
+    "menuName": {
+         "message": "Загрузить на Yandex диск",
+         "description": "Загрузить на Yandex диск." 
+    }
+}

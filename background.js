@@ -24,7 +24,8 @@ function getStatus(href, token, link) {
             getStatus(href, token, link);
         } else {
             var text = obj.status == "success"
-                    ?  "Download successful" : "Download failure";
+                    ? chrome.i18n.getMessage("downloadSuccessful")
+                    : chrome.i18n.getMessage("downloadFailure");
             showMessage(text, link);
         }
     }
@@ -66,7 +67,7 @@ function getClickHandler() {
 
 chrome.contextMenus.create
         ({
-             "title" : "Download to Yandex disk",
+             "title" : chrome.i18n.getMessage("menuName"),
              "type" : "normal",
              "contexts" : ["image","link"],
              "onclick" : getClickHandler()

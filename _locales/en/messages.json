@@ -1,0 +1,23 @@
+{
+    "extName": {
+         "message": "YaGet",
+         "description":"Extension name."
+    },
+    "extDescription": {
+         "message": "Download files to Yandex disk",
+         "description":"Extension description."
+    },
+    
+    "downloadSuccessful": {
+         "message": "Download successful", 
+         "description": "Download successful." 
+    },    
+    "downloadFailure": {
+         "message": "Download failure",
+         "description": "Download failure." 
+    },
+    "menuName": {
+         "message": "Download to Yandex disk",
+         "description": "Download to Yandex disk." 
+    }
+}
