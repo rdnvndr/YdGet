@@ -1,11 +1,28 @@
 {
     "extName": {
-         "message": "YaGet",
+         "message": "YdGet",
          "description":"Extension name."
     },
     "extDescription": {
          "message": "Download files to Yandex disk",
          "description":"Extension description."
+    },
+    
+    "pageTitle": {
+         "message": "YdGet options",
+         "description":"Title page."
+    },
+    "tokenLabel": {
+         "message": "OAuth-token",
+         "description":"Token label."
+    },
+    "pathLabel": {
+         "message": "Path for downloading",
+         "description":"Download path label."
+    },
+    "saveButton": {
+         "message": "Save",
+         "description":"Save button."
     },
     
     "downloadSuccessful": {

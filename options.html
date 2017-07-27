@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head><title>YdGet Options</title></head>
+<html lang="__MSG_@@ui_locale__" dir="__MSG_@@bidi_dir__">
+<head>
+<title id="pageTitle"></title>
+</head>
 <body>
 
-Token:
-<label>
-  <input type="text" id="token">
-</label>
-
-<div id="status"></div>
-<button id="save">Save</button>
+<H1 id="pageHead"></H1>
+<table>
+<tr>
+    <td><label id="tokenLabel"></label>:</td>
+    <td> <input type="text" id="token" size="75"> </td>
+</tr>
+<tr>
+    <td><label id="pathLabel"></label>:</td>
+    <td><input type="text" id="path" size="75"></td>
+</tr>
+<tr>
+<td colspan="2" align="right">
+   <button id="saveButton"></button>
+</td>
+</tr>
+</table>
 
 <script src="options.js"></script>
 </body>

@@ -1,11 +1,28 @@
 {
     "extName": {
-         "message": "YaGet",
+         "message": "YdGet",
          "description":"Имя расширения."
     },
     "extDescription": {
          "message": "Загрузка файлов на Yandex диск",
          "description":"Описание расширения."
+    },
+    
+    "pageTitle": {
+         "message": "YdGet настройки",
+         "description":"Заголовок страницы."
+    },
+    "tokenLabel": {
+         "message": "OAuth-токен",
+         "description":"Токен метка."
+    },
+    "pathLabel": {
+         "message": "Путь для загрузки",
+         "description":"Метка пути для загрузки."
+    },
+    "saveButton": {
+         "message": "Сохранить",
+         "description":"Кнопка сохранения."
     },
     
     "downloadSuccessful": {

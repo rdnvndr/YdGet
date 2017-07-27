@@ -20,7 +20,7 @@ function getStatus(href, token, link) {
     request.onload = function() {
         var obj = JSON.parse(request.responseText);
         if (obj.status == "in-progress") {
-            timer = setTimeout(function(){}, 1000);
+            timer = setTimeout(function(){}, 500);
             getStatus(href, token, link);
         } else {
             var text = obj.status == "success"
@@ -34,7 +34,7 @@ function getStatus(href, token, link) {
 
 function getClickHandler() {
     return function(info, tab) {
-        chrome.storage.sync.get("token", function(items) {
+        chrome.storage.sync.get({"token":"", "path":"disk:/Downloads"}, function(items) {
             if (!chrome.runtime.error) {
                 var token = items.token;
                 var link = info.linkUrl != null ? info.linkUrl : info.srcUrl;
@@ -46,7 +46,7 @@ function getClickHandler() {
                 }
                 var url = encodeURIComponent(link);
 
-                var path = encodeURIComponent('disk:/Downloads/' + filename);
+                var path = encodeURIComponent(items.path + "/" + filename);
 
                 var request = new XMLHttpRequest();
 
