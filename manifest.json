@@ -1,0 +1,25 @@
+{
+    "name" : "YdGet",
+    "version" : "0.1.0",
+    "description" : "Download files to Yandex disk",
+    "options_page": "options.html",
+    "background" : {
+        "scripts": ["background.js"]
+    },
+    "permissions" : [
+        "contextMenus",
+        "tabs",
+        "alarms",
+        "storage",
+        "notifications",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "minimum_chrome_version" : "6.0.0.0",
+    "icons" : {
+        "16"  : "yd-16.png",
+        "48"  : "yd-48.png",
+        "128" : "yd-128.png"
+    },
+    "manifest_version": 2
+}
